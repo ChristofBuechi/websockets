@@ -1,10 +1,10 @@
-package com.sergialmar.wschat.domain;
+package ch.christofbuechi.eventResponder.domain;
 
 /**
  * 
  * @author Sergi Almar
  */
-public class ChatMessage {
+public class Message {
 
 	private String username;
 	private String message;
