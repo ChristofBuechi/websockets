@@ -1,6 +1,7 @@
 ext {
     versions = [
-            springboot      : "2.1.2.RELEASE"
+            springboot      : "2.1.2.RELEASE",
+            spring      : "5.1.2.RELEASE"
     ]
 
     mockito = [mockito: "org.mockito:mockito-core:$versions.mockito"]
@@ -8,6 +9,8 @@ ext {
     restMock = [restMock: "com.github.andrzejchm.RESTMock:android:$versions.restMock"]
 
     springDeps = [
+            integration             : "org.springframework.boot:spring-boot-starter-integration:$versions.springboot",
+            file                    : "org.springframework.integration:spring-integration-file:$versions.spring",
             webflux                 : "org.springframework.boot:spring-boot-starter-webflux:$versions.springboot",
             kotlin                  : "com.fasterxml.jackson.module:jackson-module-kotlin",
             kotlinstdlibjdk8        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
